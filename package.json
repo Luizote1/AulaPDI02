@@ -1,0 +1,31 @@
+{
+  "name": "aulapdi02",
+  "version": "1.0.0",
+  "description": "Atividade de formulario utilizando express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luizote1/AulaPDI02.git"
+  },
+  "keywords": [
+    "javascrips",
+    "nodejs",
+    "express",
+    "http",
+    "post"
+  ],
+  "author": "Luiz Gustavo Sá da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luizote1/AulaPDI02/issues"
+  },
+  "homepage": "https://github.com/Luizote1/AulaPDI02#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
