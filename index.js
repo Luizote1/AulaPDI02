@@ -2,8 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 
 const server = express();
-const host = "0.0.0.0";
-const porta = 3100;
+const porta = 3333;
 
 server.use(bodyParser.urlencoded({ extended: true }));
 let usuarios = [];
@@ -20,7 +19,7 @@ server.get("/", (req, res) => {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { background-color: #f8f9fa; }
-    .navbar { background: linear-gradient(90deg, #0d6efd, #6610f2); }
+    .navbar { background: #0a8; }
     .navbar-brand, .nav-link { color: white !important; font-weight: 500; }
     .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
   </style>
@@ -68,7 +67,7 @@ server.get("/cadastro", (req, res) => {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { background-color: #f0f2f5; }
-    .navbar { background: linear-gradient(90deg, #0d6efd, #6610f2); }
+    .navbar { background: #0a8; }
     .navbar-brand, .nav-link { color: white !important; font-weight: 500; }
     .form-container {
       max-width: 650px;
@@ -206,7 +205,7 @@ server.get("/usuarios", (req, res) => {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body { background-color: #f8f9fa; }
-    .navbar { background: linear-gradient(90deg, #0d6efd, #6610f2); }
+    .navbar { background: #0a8; }
     .navbar-brand, .nav-link { color: white !important; }
     table { background-color: white; border-radius: 10px; overflow: hidden; }
   </style>
@@ -246,6 +245,6 @@ server.get("/usuarios", (req, res) => {
   `);
 });
 
-server.listen(porta, host, () => {
-  console.log(`✅ Servidor rodando em http://${host}:${porta}`);
+server.listen(porta, () => {
+  console.log(`✅ Servidor rodando em http://localhost:${porta}`);
 });
